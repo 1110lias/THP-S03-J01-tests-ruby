@@ -41,29 +41,49 @@ end
 # Let's write some tests !
 # we'll show you the first, you will write the others :)
 
-describe "#multiply" do
-
+describe "lemultiply" do
   it "multiplies two numbers" do
-    expect(multiply(3, 4)).to eq(12)
+    expect(lemultiply(3, 4)).to eq(12)
   end
-
-  it "multiplies two other numbers"
-    # one other test here, don't forget do end ;)
-
-  it "multiplies two other numbers, one of them being 0"
-    # one last test, with 0 in it
-
+  it "multiplies two other numbers" do
+    expect(lemultiply(200,2)).to eq (400)
+  end
+  it "multiplies two other numbers, one of them being 0" do
+    expect(lemultiply(0,4)).to eq(0)
+end
 end
 
-describe "#power" do
-  it "raises one number to the power of another number"
+describe "le_power" do
+  it "raises one number to the power of another number" do 
+  expect(le_power(1,2)).to eq(1)
+end
+  it "raises one number to the power of another number" do
+  expect(le_power(2,2)).to eq(4)
+end
+  it "raises one number to the power of another number" do
+  expect(le_power(3,3)).to eq(27)
+end
+  it "raises one number to the power of another number" do
+  expect(le_power(4,4)).to eq(256)
 end
 
+end
 # http://en.wikipedia.org/wiki/Factorial
-describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+describe "le_factorial" do
+  it "computes the factorial of 0" do
+  expect(le_factorial(0)).to eq(1) 
+  end
+  it "computes the factorial of 1" do
+  expect(le_factorial(1)).to eq(1) 
 end
+  it "computes the factorial of 2" do
+  expect(le_factorial(2)).to eq(2) 
+end
+  it "computes the factorial of 5" do
+  expect(le_factorial(5)).to eq(120) 
+end
+  it "computes the factorial of 10" do
+  expect(le_factorial(10)).to eq(3628800) 
+end
+end
+

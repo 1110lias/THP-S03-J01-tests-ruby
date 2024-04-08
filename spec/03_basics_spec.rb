@@ -24,7 +24,6 @@ describe 'crazy stuff on strings' do
   end
 end
 
-
 describe '42 finder' do
   # array_42 takes an array as parameter and returns:
   # - true if there's a 42 in the array items
@@ -36,7 +35,6 @@ describe '42 finder' do
     expect(array_42([1, 2, 3, 4, 5, 6, 7 , 8, 9, 42, 21, 10.5])).to eq true
   end
 end
-
 
 describe 'crazy stuff on arrays' do
   # The magic_array function takes an array of number or an array of
